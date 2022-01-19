@@ -1,0 +1,15 @@
+import java.util.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		
+		System.out.println(a*(b%10)); // 1의 자리만 곱해야 함.
+		System.out.println(a*(b%100/10));  // 10의 자리
+		System.out.println(a*(b/100)); 		// 100의 자리를 곱해야 함.
+		System.out.println(a*b);	// 전체를 곱해야 함.	
+	}
+}
